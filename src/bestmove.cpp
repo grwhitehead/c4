@@ -40,8 +40,8 @@ int main(int argc, const char** argv) {
             pos.unmove(before_move);
 
             std::cout << i
-                      //<< " " << move_score
-                      << " " << (move_score<0?-1:1)*pos.moves_left(move_score)
+                      << " " << move_score
+                      << " " << pos.moves_left(move_score)
                       << std::endl;
 
             if (move_score >= score) {
